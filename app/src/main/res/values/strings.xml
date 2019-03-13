@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Positive App</string>
+
+    <string name="label_more">More</string>
+    <string name="label_next">Следующий вопрос</string>
+    <string name="label_question">Question #</string>
+
+    <string name="label_answer_1">Точно про меня</string>
+    <string name="label_answer_2">Похоже на меня</string>
+    <string name="label_answer_3">Не знаю</string>
+    <string name="label_answer_4">Не похоже на меня</string>
+    <string name="label_answer_5">Точно не про меня</string>
+
+    <string name="question_text_1">Способность придумывать новые и оригинальные идеи - одна из моих сильных сторон</string>
+    <string name="question_text_2">Я часто отстаивалс вою позицию перед лицом сильной оппозиции</string>
+    <string name="question_text_3">Я никогда не бросаю дело, пока оно не закончено</string>
+    <string name="question_text_4">Я всегда выполняю свои обещания</string>
+    <string name="question_text_5">Мне не трудно питаться здоровой пищей</string>
+
+    <string-array name="questions">
+        <item>@string/question_text_1</item>
+        <item>@string/question_text_2</item>
+        <item>@string/question_text_3</item>
+        <item>@string/question_text_4</item>
+        <item>@string/question_text_5</item>
+    </string-array>
+
+</resources>
