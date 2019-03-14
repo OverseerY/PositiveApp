@@ -14,9 +14,15 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class TestFragment extends Fragment {
 
     private int current_answer = 0;
+
+    private List<String> characterStrengths;
 
     TextView questionNumber;
     TextView questionText;
@@ -43,6 +49,8 @@ public class TestFragment extends Fragment {
 
         res = getResources();
         questions = res.getStringArray(R.array.questions);
+        characterStrengths = new ArrayList<>();
+        characterStrengths = Arrays.asList(res.getStringArray(R.array.strengths));
     }
 
     @Nullable
@@ -60,6 +68,9 @@ public class TestFragment extends Fragment {
         answer4 = rootView.findViewById(R.id.rb_answer_4);
         answer5 = rootView.findViewById(R.id.rb_answer_5);
 
+        String cur_number = getString(R.string.label_question) + 1;
+        questionNumber.setText(cur_number);
+
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,15 +85,19 @@ public class TestFragment extends Fragment {
         if (answers.getCheckedRadioButtonId() == -1) {
             Toast.makeText(getContext(), "Выберите подходящий ответ, чтобы продолжить", Toast.LENGTH_SHORT).show();
         } else {
-            if (current_answer < 4) {
+            if (current_answer < questions.length - 1) {
                 current_answer++;
                 questionText.setText(questions[current_answer]);
                 answers.clearCheck();
+                String next_question = getString(R.string.label_question) + Integer.toString(current_answer + 1);
+                questionNumber.setText(next_question);
             } else {
                 Toast.makeText(getContext(), "Это были все вопросы на сегодня", Toast.LENGTH_SHORT).show();
             }
         }
     }
+
+
 
 }
 
