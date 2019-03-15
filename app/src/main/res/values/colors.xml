@@ -10,4 +10,12 @@
     <color name="customSecondary">#fbc02d</color>
     <color name="customSecondaryDark">#c49000</color>
     <color name="customSecondaryLight">#fff263</color>
+    
+    <color name="color_wisdom">#9e9d24</color>
+    <color name="color_courage">#b71c1c</color>
+    <color name="color_humanity">#ff9e80</color>
+    <color name="color_justice">#9c64a6</color>
+    <color name="color_temperance">#81d4fa</color>
+    <color name="color_transcendence">#1a237e</color>
+
 </resources>

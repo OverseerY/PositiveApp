@@ -4,6 +4,8 @@
     <string name="label_more">More</string>
     <string name="label_next">Следующий вопрос</string>
     <string name="label_question">Вопрос #</string>
+    <string name="label_reults">Результаты</string>
+    <string name="label_icon">Icon</string>
 
     <string name="strength_1">Честность</string>
     <string name="strength_2">Чувство юмора</string>
