@@ -7,6 +7,13 @@
     <string name="label_reults">Результаты</string>
     <string name="label_icon">Icon</string>
 
+    <string name="virtue_1">Мудрость</string>
+    <string name="virtue_2">Мужество</string>
+    <string name="virtue_3">Гуманность</string>
+    <string name="virtue_4">Справедливость</string>
+    <string name="virtue_5">Самоконтроль</string>
+    <string name="virtue_6">Превосходство</string>
+
     <string name="strength_1">Честность</string>
     <string name="strength_2">Чувство юмора</string>
     <string name="strength_3">Критическое мышление</string>
@@ -24,7 +31,7 @@
     <string name="strength_15">Благодарность</string>
     <string name="strength_16">Настойчивость (усердие, трудолюбие, стойкость)</string>
     <string name="strength_17">Социальный (эмоциональный) интеллект</string>
-    <string name="strength_18">Умение ценит красоту и совершенство во всём</string>
+    <string name="strength_18">Умение ценить красоту и совершенство во всём</string>
     <string name="strength_19">Широта видения (взгляд с разных точек зрения)</string>
     <string name="strength_20">Духовность (вера, смысл жизни)</string>
     <string name="strength_21">Благоразумие (осторожность)</string>
@@ -309,4 +316,70 @@
         <item>@string/strength_24</item>
     </string-array>
 
+    <string-array name="virtues">
+        <item>@string/virtue_1</item>
+        <item>@string/virtue_2</item>
+        <item>@string/virtue_3</item>
+        <item>@string/virtue_4</item>
+        <item>@string/virtue_5</item>
+        <item>@string/virtue_6</item>
+    </string-array>
+
+    <string-array name="icons">
+        <item>@drawable/str1</item>
+        <item>@drawable/str2</item>
+        <item>@drawable/str3</item>
+        <item>@drawable/str4</item>
+        <item>@drawable/str5</item>
+        <item>@drawable/str6</item>
+        <item>@drawable/str7</item>
+        <item>@drawable/str8</item>
+        <item>@drawable/str9</item>
+        <item>@drawable/str10</item>
+        <item>@drawable/str11</item>
+        <item>@drawable/str12</item>
+        <item>@drawable/str13</item>
+        <item>@drawable/str14</item>
+        <item>@drawable/str15</item>
+        <item>@drawable/str16</item>
+        <item>@drawable/str17</item>
+        <item>@drawable/str18</item>
+        <item>@drawable/str19</item>
+        <item>@drawable/str20</item>
+        <item>@drawable/str21</item>
+        <item>@drawable/str22</item>
+        <item>@drawable/str23</item>
+        <item>@drawable/str24</item>
+    </string-array>
+
 </resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

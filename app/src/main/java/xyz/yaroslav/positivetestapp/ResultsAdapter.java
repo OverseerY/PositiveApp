@@ -1,28 +1,21 @@
 package xyz.yaroslav.positivetestapp;
 
-import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseExpandableListAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class ResultsAdapter extends RecyclerView.Adapter<ResultsAdapter.ViewHolder> {
-    private Context context;
-    private List<String> headers;
-    private Map<String, Integer> strengths_results;
+    private List<CharacterStrength> strengthList;
 
-    public ResultsAdapter(Context context, List<String> headers) {
-        this.headers = headers;
-        this.context = context;
+    public ResultsAdapter(List<CharacterStrength> strengthList) {
+        this.strengthList = strengthList;
     }
 
     @NonNull
@@ -34,12 +27,16 @@ public class ResultsAdapter extends RecyclerView.Adapter<ResultsAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull ResultsAdapter.ViewHolder viewHolder, int position) {
-        
+        CharacterStrength strength = strengthList.get(position);
+
+        viewHolder.header.setText(strength.getName());
+        viewHolder.virtue.setText(strength.getVirtue());
+        viewHolder.icon.setImageResource(strength.getIcon_resource());
     }
 
     @Override
     public int getItemCount() {
-        return headers.size();
+        return strengthList.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

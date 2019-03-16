@@ -6,6 +6,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,14 +21,21 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
+import java.util.Collections;
+import java.util.Comparator;
+
 public class TestFragment extends Fragment {
 
-    private int current_answer = 0;
+    private List<Question> questionList;
+    private List<CharacterStrength> strengthList;
 
-    private List<String> characterStrengths;
+    private int current_question = 0;
+
 
     ImageView menuMore;
     TextView questionNumber;
@@ -42,8 +50,11 @@ public class TestFragment extends Fragment {
 
     Resources res;
     String[] questions;
-    String[] quest_strength;
-    Map<String, Integer> strength_value;
+    String[] strengths;
+    String[] questions_strengths;
+    String[] virtues;
+    Map<String, Integer> results;
+    String[] iconsRes;
 
     public TestFragment() {}
 
@@ -57,12 +68,13 @@ public class TestFragment extends Fragment {
 
         res = getResources();
         questions = res.getStringArray(R.array.questions);
-        characterStrengths = new ArrayList<>();
-        characterStrengths = Arrays.asList(res.getStringArray(R.array.strengths));
-        quest_strength = new String[questions.length];
-        fillArrayWithCharacterStrengthPerQuestion(quest_strength, characterStrengths);
-        strength_value = new HashMap<>();
-        fillCollection(strength_value, characterStrengths);
+        prepareQuestions();
+        strengths = res.getStringArray(R.array.strengths);
+        questions_strengths = setStrengthsToQuestions();
+        results = new HashMap<>();
+        prepareResults();
+        virtues = res.getStringArray(R.array.virtues);
+        iconsRes = res.getStringArray(R.array.icons);
     }
 
     @Nullable
@@ -81,182 +93,319 @@ public class TestFragment extends Fragment {
         answer4 = rootView.findViewById(R.id.rb_answer_4);
         answer5 = rootView.findViewById(R.id.rb_answer_5);
 
-        String cur_number = getString(R.string.label_question) + 1 + " из " + questions.length;
+        String cur_number = Integer.toString(questionList.get(current_question).getQ_id() + 1) + " из " + questions.length;
+        String cur_question = questionList.get(current_question).getQ_description();
+        questionText.setText(cur_question);
         questionNumber.setText(cur_number);
 
-        nextButton.setOnClickListener(v -> applyAnswer());
+        nextButton.setOnClickListener(v -> saveAnswer());
 
         return rootView;
     }
 
-    private void applyAnswer() {
+    private void saveAnswer() {
         if (answers.getCheckedRadioButtonId() == -1) {
             Toast.makeText(getContext(), "Выберите подходящий ответ, чтобы продолжить", Toast.LENGTH_SHORT).show();
         } else {
-            getAnswer(current_answer);
-            if (current_answer < questions.length - 1) {
-                current_answer++;
-                questionText.setText(questions[current_answer]);
+            questionList.get(current_question).setQ_result(getAnswerValue());
+            Log.i("RESULT", Integer.toString(questionList.get(current_question).getQ_result()));
+
+            if (current_question < questions.length - 1) {
+                current_question++;
+                String cur_question = questionList.get(current_question).getQ_description();
+                String cur_number = Integer.toString(questionList.get(current_question).getQ_id() + 1) + " из " + questions.length;
+                questionText.setText(cur_question);
+                questionNumber.setText(cur_number);
                 answers.clearCheck();
-                String next_question = getString(R.string.label_question) + Integer.toString(current_answer + 1) + " из " + questions.length;
-                questionNumber.setText(next_question);
             } else {
                 Toast.makeText(getContext(), "Это были все вопросы на сегодня", Toast.LENGTH_SHORT).show();
-                Log.i("RESULTS", strength_value.values().toString());
+                calculateResults();
+                Log.i("RESULT", results.entrySet().toString());
             }
         }
     }
 
-    private void getAnswer(int index) {
-        int value;
+    private int getAnswerValue() {
         if (answer1.isChecked()) {
-            value = 4;
+            return 4;
         } else if (answer2.isChecked()) {
-            value = 3;
+            return  3;
         } else if (answer3.isChecked()) {
-            value = 2;
+            return  2;
         } else if (answer4.isChecked()) {
-            value = 1;
+            return  1;
         } else {
-            value = 0;
-        }
-        updateStrengthValue(index, value);
-    }
-
-    private void updateStrengthValue(int index, int value) {
-        String str = quest_strength[index];
-        if (strength_value.containsKey(str)) {
-            strength_value.put(str, strength_value.get(str) + value);
+            return  0;
         }
     }
 
-    private void fillArrayWithCharacterStrengthPerQuestion(String[] arr, List<String> strengths) {
-        arr[0] = strengths.get(0);
-        arr[1] = strengths.get(1);
-        arr[2] = strengths.get(2);
-        arr[3] = strengths.get(3);
-        arr[4] = strengths.get(4);
-        arr[5] = strengths.get(5);
-        arr[6] = strengths.get(6);
-        arr[7] = strengths.get(7);
-        arr[8] = strengths.get(8);
-        arr[9] = strengths.get(9);
-        arr[10] = strengths.get(10);
-        arr[11] = strengths.get(11);
-        arr[12] = strengths.get(12);
-        arr[13] = strengths.get(13);
-        arr[14] = strengths.get(14);
-        arr[15] = strengths.get(15);
-        arr[16] = strengths.get(16);
-        arr[17] = strengths.get(17);
-        arr[18] = strengths.get(18);
-        arr[19] = strengths.get(19);
-        arr[20] = strengths.get(20);
-        arr[21] = strengths.get(21);
-        arr[22] = strengths.get(22);
-        arr[23] = strengths.get(23);
-        arr[24] = strengths.get(0);
-        arr[25] = strengths.get(1);
-        arr[26] = strengths.get(2);
-        arr[27] = strengths.get(3);
-        arr[28] = strengths.get(4);
-        arr[29] = strengths.get(5);
-        arr[30] = strengths.get(6);
-        arr[31] = strengths.get(7);
-        arr[32] = strengths.get(8);
-        arr[33] = strengths.get(9);
-        arr[34] = strengths.get(10);
-        arr[35] = strengths.get(11);
-        arr[36] = strengths.get(12);
-        arr[37] = strengths.get(13);
-        arr[38] = strengths.get(14);
-        arr[39] = strengths.get(15);
-        arr[40] = strengths.get(16);
-        arr[41] = strengths.get(17);
-        arr[42] = strengths.get(18);
-        arr[43] = strengths.get(19);
-        arr[44] = strengths.get(20);
-        arr[45] = strengths.get(21);
-        arr[46] = strengths.get(22);
-        arr[47] = strengths.get(23);
-        arr[48] = strengths.get(0);
-        arr[49] = strengths.get(1);
-        arr[50] = strengths.get(2);
-        arr[51] = strengths.get(3);
-        arr[52] = strengths.get(4);
-        arr[53] = strengths.get(5);
-        arr[54] = strengths.get(6);
-        arr[55] = strengths.get(7);
-        arr[56] = strengths.get(8);
-        arr[57] = strengths.get(9);
-        arr[58] = strengths.get(10);
-        arr[59] = strengths.get(11);
-        arr[60] = strengths.get(12);
-        arr[61] = strengths.get(13);
-        arr[62] = strengths.get(14);
-        arr[63] = strengths.get(15);
-        arr[64] = strengths.get(16);
-        arr[65] = strengths.get(17);
-        arr[66] = strengths.get(18);
-        arr[67] = strengths.get(19);
-        arr[68] = strengths.get(20);
-        arr[69] = strengths.get(21);
-        arr[70] = strengths.get(22);
-        arr[71] = strengths.get(23);
-        arr[72] = strengths.get(0);
-        arr[73] = strengths.get(1);
-        arr[74] = strengths.get(2);
-        arr[75] = strengths.get(3);
-        arr[76] = strengths.get(4);
-        arr[77] = strengths.get(5);
-        arr[78] = strengths.get(6);
-        arr[79] = strengths.get(7);
-        arr[80] = strengths.get(8);
-        arr[81] = strengths.get(9);
-        arr[82] = strengths.get(10);
-        arr[83] = strengths.get(11);
-        arr[84] = strengths.get(12);
-        arr[85] = strengths.get(13);
-        arr[86] = strengths.get(14);
-        arr[87] = strengths.get(15);
-        arr[88] = strengths.get(16);
-        arr[89] = strengths.get(17);
-        arr[90] = strengths.get(18);
-        arr[91] = strengths.get(19);
-        arr[92] = strengths.get(20);
-        arr[93] = strengths.get(21);
-        arr[94] = strengths.get(22);
-        arr[95] = strengths.get(23);
-        arr[96] = strengths.get(0);
-        arr[97] = strengths.get(1);
-        arr[98] = strengths.get(2);
-        arr[99] = strengths.get(3);
-        arr[100] = strengths.get(4);
-        arr[101] = strengths.get(5);
-        arr[102] = strengths.get(6);
-        arr[103] = strengths.get(7);
-        arr[104] = strengths.get(8);
-        arr[105] = strengths.get(9);
-        arr[106] = strengths.get(10);
-        arr[107] = strengths.get(11);
-        arr[108] = strengths.get(12);
-        arr[109] = strengths.get(13);
-        arr[110] = strengths.get(14);
-        arr[111] = strengths.get(15);
-        arr[112] = strengths.get(16);
-        arr[113] = strengths.get(17);
-        arr[114] = strengths.get(18);
-        arr[115] = strengths.get(19);
-        arr[116] = strengths.get(20);
-        arr[117] = strengths.get(21);
-        arr[118] = strengths.get(22);
-        arr[119] = strengths.get(23);
+    private void prepareQuestions() {
+        questionList = new ArrayList<>();
+        for (int i = 0; i < questions.length; i++) {
+            Question question = new Question(i, questions[i], 0);
+            questionList.add(question);
+        }
     }
 
-    private void fillCollection(Map<String, Integer> map, List<String> strengths) {
+    private void prepareStrengths() {
+        strengthList = new ArrayList<>();
+        for (int i = 0; i < strengths.length; i++) {
+            String virtue;
+            int img_res;
+            switch (strengths[i]) {
+                case "Честность":
+                    virtue = getString(R.string.virtue_2);
+                    img_res = R.drawable.str1;
+                    break;
+                case "Чувство юмора":
+                    virtue = getString(R.string.virtue_6);
+                    img_res = R.drawable.str2;
+                    break;
+                case "Критическое мышление":
+                    virtue = getString(R.string.virtue_1);
+                    img_res = R.drawable.str3;
+                    break;
+                case "Креативность (творческое мышление, оригинальность)":
+                    virtue = getString(R.string.virtue_1);
+                    img_res = R.drawable.str4;
+                    break;
+                case "Храбрость (отвага)":
+                    virtue = getString(R.string.virtue_2);
+                    img_res = R.drawable.str5;
+                    break;
+                case "Любопытство (любознательность)":
+                    virtue = getString(R.string.virtue_1);
+                    img_res = R.drawable.str6;
+                    break;
+                case "Беспристрастность":
+                    virtue = getString(R.string.virtue_4);
+                    img_res = R.drawable.str7;
+                    break;
+                case "Прощение (умение прощать)":
+                    virtue = getString(R.string.virtue_5);
+                    img_res = R.drawable.str8;
+                    break;
+                case "Оптимизм (надежда,ориентация на будущее)":
+                    virtue = getString(R.string.virtue_6);
+                    img_res = R.drawable.str9;
+                    break;
+                case "Доброта (великодушие, забота, сострадание)":
+                    virtue = getString(R.string.virtue_3);
+                    img_res = R.drawable.str10;
+                    break;
+                case "Энергичность (жажда жизни, энтузиазм, бодрость)":
+                    virtue = getString(R.string.virtue_2);
+                    img_res = R.drawable.str11;
+                    break;
+                case "Лидерство":
+                    virtue = getString(R.string.virtue_4);
+                    img_res = R.drawable.str12;
+                    break;
+                case "Любовь к учению":
+                    virtue = getString(R.string.virtue_1);
+                    img_res = R.drawable.str13;
+                    break;
+                case "Любовь":
+                    virtue = getString(R.string.virtue_3);
+                    img_res = R.drawable.str14;
+                    break;
+                case "Благодарность":
+                    virtue = getString(R.string.virtue_6);
+                    img_res = R.drawable.str15;
+                    break;
+                case "Настойчивость (усердие, трудолюбие, стойкость)":
+                    virtue = getString(R.string.virtue_2);
+                    img_res = R.drawable.str16;
+                    break;
+                case "Социальный (эмоциональный) интеллект":
+                    virtue = getString(R.string.virtue_3);
+                    img_res = R.drawable.str17;
+                    break;
+                case "Умение ценить красоту и совершенство во всём":
+                    virtue = getString(R.string.virtue_6);
+                    img_res = R.drawable.str18;
+                    break;
+                case "Широта видения (взгляд с разных точек зрения)":
+                    virtue = getString(R.string.virtue_1);
+                    img_res = R.drawable.str19;
+                    break;
+                case "Духовность (вера, смысл жизни)":
+                    virtue = getString(R.string.virtue_6);
+                    img_res = R.drawable.str20;
+                    break;
+                case "Благоразумие (осторожность)":
+                    virtue = getString(R.string.virtue_5);
+                    img_res = R.drawable.str21;
+                    break;
+                case "Командный дух":
+                    virtue = getString(R.string.virtue_4);
+                    img_res = R.drawable.str22;
+                    break;
+                case "Смирение":
+                    virtue = getString(R.string.virtue_5);
+                    img_res = R.drawable.str23;
+                    break;
+                case "Самоконтроль (саморегуляция)":
+                    virtue = getString(R.string.virtue_5);
+                    img_res = R.drawable.str24;
+                    break;
+                default:
+                    virtue = "Неизвестно";
+                    img_res = R.drawable.str1;
+                    break;
+            }
+            CharacterStrength characterStrength = new CharacterStrength(strengths[i],virtue,results.get(strengths[i]),img_res);
+            strengthList.add(characterStrength);
+        }
+    }
+
+    private void calculateResults() {
+        results.clear();
+        prepareResults();
+        for (int i = 0; i < questions_strengths.length; i++) {
+            results.put(questions_strengths[i], results.get(questions_strengths[i]) + questionList.get(i).getQ_result());
+        }
+        prepareStrengths();
+    }
+
+    private void prepareResults() {
         for (String s : strengths) {
-            map.put(s, 0);
+            results.put(s,0);
         }
+    }
+
+    private String[] setStrengthsToQuestions() {
+        String[] quest_strength = new String[questions.length];
+        quest_strength[0] = strengths[0];
+        quest_strength[1] = strengths[1];
+        quest_strength[2] = strengths[2];
+        quest_strength[3] = strengths[3];
+        quest_strength[4] = strengths[4];
+        quest_strength[5] = strengths[5];
+        quest_strength[6] = strengths[6];
+        quest_strength[7] = strengths[7];
+        quest_strength[8] = strengths[8];
+        quest_strength[9] = strengths[9];
+        quest_strength[10] = strengths[10];
+        quest_strength[11] = strengths[11];
+        quest_strength[12] = strengths[12];
+        quest_strength[13] = strengths[13];
+        quest_strength[14] = strengths[14];
+        quest_strength[15] = strengths[15];
+        quest_strength[16] = strengths[16];
+        quest_strength[17] = strengths[17];
+        quest_strength[18] = strengths[18];
+        quest_strength[19] = strengths[19];
+        quest_strength[20] = strengths[20];
+        quest_strength[21] = strengths[21];
+        quest_strength[22] = strengths[22];
+        quest_strength[23] = strengths[23];
+        quest_strength[24] = strengths[0];
+        quest_strength[25] = strengths[1];
+        quest_strength[26] = strengths[2];
+        quest_strength[27] = strengths[3];
+        quest_strength[28] = strengths[4];
+        quest_strength[29] = strengths[5];
+        quest_strength[30] = strengths[6];
+        quest_strength[31] = strengths[7];
+        quest_strength[32] = strengths[8];
+        quest_strength[33] = strengths[9];
+        quest_strength[34] = strengths[10];
+        quest_strength[35] = strengths[11];
+        quest_strength[36] = strengths[12];
+        quest_strength[37] = strengths[13];
+        quest_strength[38] = strengths[14];
+        quest_strength[39] = strengths[15];
+        quest_strength[40] = strengths[16];
+        quest_strength[41] = strengths[17];
+        quest_strength[42] = strengths[18];
+        quest_strength[43] = strengths[19];
+        quest_strength[44] = strengths[20];
+        quest_strength[45] = strengths[21];
+        quest_strength[46] = strengths[22];
+        quest_strength[47] = strengths[23];
+        quest_strength[48] = strengths[0];
+        quest_strength[49] = strengths[1];
+        quest_strength[50] = strengths[2];
+        quest_strength[51] = strengths[3];
+        quest_strength[52] = strengths[4];
+        quest_strength[53] = strengths[5];
+        quest_strength[54] = strengths[6];
+        quest_strength[55] = strengths[7];
+        quest_strength[56] = strengths[8];
+        quest_strength[57] = strengths[9];
+        quest_strength[58] = strengths[10];
+        quest_strength[59] = strengths[11];
+        quest_strength[60] = strengths[12];
+        quest_strength[61] = strengths[13];
+        quest_strength[62] = strengths[14];
+        quest_strength[63] = strengths[15];
+        quest_strength[64] = strengths[16];
+        quest_strength[65] = strengths[17];
+        quest_strength[66] = strengths[18];
+        quest_strength[67] = strengths[19];
+        quest_strength[68] = strengths[20];
+        quest_strength[69] = strengths[21];
+        quest_strength[70] = strengths[22];
+        quest_strength[71] = strengths[23];
+        quest_strength[72] = strengths[0];
+        quest_strength[73] = strengths[1];
+        quest_strength[74] = strengths[2];
+        quest_strength[75] = strengths[3];
+        quest_strength[76] = strengths[4];
+        quest_strength[77] = strengths[5];
+        quest_strength[78] = strengths[6];
+        quest_strength[79] = strengths[7];
+        quest_strength[80] = strengths[8];
+        quest_strength[81] = strengths[9];
+        quest_strength[82] = strengths[10];
+        quest_strength[83] = strengths[11];
+        quest_strength[84] = strengths[12];
+        quest_strength[85] = strengths[13];
+        quest_strength[86] = strengths[14];
+        quest_strength[87] = strengths[15];
+        quest_strength[88] = strengths[16];
+        quest_strength[89] = strengths[16];
+        quest_strength[90] = strengths[18];
+        quest_strength[91] = strengths[19];
+        quest_strength[92] = strengths[20];
+        quest_strength[93] = strengths[21];
+        quest_strength[94] = strengths[22];
+        quest_strength[95] = strengths[23];
+        quest_strength[96] = strengths[0];
+        quest_strength[97] = strengths[1];
+        quest_strength[98] = strengths[2];
+        quest_strength[99] = strengths[3];
+        quest_strength[100] = strengths[4];
+        quest_strength[101] = strengths[5];
+        quest_strength[102] = strengths[6];
+        quest_strength[103] = strengths[7];
+        quest_strength[104] = strengths[8];
+        quest_strength[105] = strengths[9];
+        quest_strength[106] = strengths[10];
+        quest_strength[107] = strengths[11];
+        quest_strength[108] = strengths[12];
+        quest_strength[109] = strengths[13];
+        quest_strength[110] = strengths[14];
+        quest_strength[111] = strengths[15];
+        quest_strength[112] = strengths[16];
+        quest_strength[113] = strengths[17];
+        quest_strength[114] = strengths[18];
+        quest_strength[115] = strengths[19];
+        quest_strength[116] = strengths[20];
+        quest_strength[117] = strengths[21];
+        quest_strength[118] = strengths[22];
+        quest_strength[119] = strengths[23];
+
+        return quest_strength;
+    }
+
+    private void showResultFragment() {
+        ResultFragment fragment = new ResultFragment();
+        FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.fragment_container, fragment);
+        ft.addToBackStack(null);
+        ft.commit();
     }
 
 }
