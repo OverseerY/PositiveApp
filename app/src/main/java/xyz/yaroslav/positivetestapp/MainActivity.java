@@ -20,4 +20,9 @@ public class MainActivity extends AppCompatActivity {
         ft.addToBackStack(null);
         ft.commit();
     }
+
+    @Override
+    public void onBackPressed() {
+
+    }
 }

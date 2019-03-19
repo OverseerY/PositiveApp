@@ -22,9 +22,7 @@
                 android:layout_width="75dp"
                 android:layout_height="75dp"
                 android:layout_gravity="center_vertical"
-                android:layout_marginStart="5dp"
-                android:layout_marginEnd="5dp"
-                app:srcCompat="@drawable/str1"
+                android:layout_margin="5dp"
                 android:contentDescription="@string/label_icon"/>
 
             <LinearLayout
@@ -39,7 +37,6 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:textAppearanceLarge"
                     android:gravity="center_vertical"
-                    android:text="@string/strength_1"
                     android:ellipsize="end"
                     android:maxLines="1"
                     style="@style/autoscroll"
@@ -51,8 +48,6 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:textAppearanceMedium"
                     android:gravity="bottom"
-                    android:text="Мужество"
-                    android:textColor="@color/color_courage"
                     android:ellipsize="end"
                     android:maxLines="1"
                     style="@style/autoscroll"
