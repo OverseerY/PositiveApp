@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Позитивное приложение</string>
+    <string name="label_more">Дополнительно</string>
+    <string name="label_icon">Изображение</string>
+    <string name="label_cards">Карточки</string>
+    <string name="label_settings">Настройки</string>
+    <string name="label_tests">Тесты</string>
+    <string name="label_notes">Заметки</string>
+</resources>

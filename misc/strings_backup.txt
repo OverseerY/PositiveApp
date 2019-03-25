@@ -1,0 +1,351 @@
+<string name="label_more">More</string>
+    <string name="label_next">Следующий вопрос</string>
+    <string name="label_question">Вопрос #</string>
+    <string name="label_reults">Результаты</string>
+    <string name="label_icon">Icon</string>
+
+    <string name="virtue_1">Мудрость</string>
+    <string name="virtue_2">Мужество</string>
+    <string name="virtue_3">Гуманность</string>
+    <string name="virtue_4">Справедливость</string>
+    <string name="virtue_5">Самоконтроль</string>
+    <string name="virtue_6">Превосходство</string>
+
+    <string name="strength_1">Честность</string>
+    <string name="strength_2">Чувство юмора</string>
+    <string name="strength_3">Критическое мышление</string>
+    <string name="strength_4">Креативность (творческое мышление, оригинальность)</string>
+    <string name="strength_5">Храбрость (отвага)</string>
+    <string name="strength_6">Любопытство (любознательность)</string>
+    <string name="strength_7">Беспристрастность</string>
+    <string name="strength_8">Прощение (умение прощать)</string>
+    <string name="strength_9">Оптимизм (надежда,ориентация на будущее)</string>
+    <string name="strength_10">Доброта (великодушие, забота, сострадание)</string>
+    <string name="strength_11">Энергичность (жажда жизни, энтузиазм, бодрость)</string>
+    <string name="strength_12">Лидерство</string>
+    <string name="strength_13">Любовь к учению</string>
+    <string name="strength_14">Любовь</string>
+    <string name="strength_15">Благодарность</string>
+    <string name="strength_16">Настойчивость (усердие, трудолюбие, стойкость)</string>
+    <string name="strength_17">Социальный (эмоциональный) интеллект</string>
+    <string name="strength_18">Умение ценить красоту и совершенство во всём</string>
+    <string name="strength_19">Широта видения (взгляд с разных точек зрения)</string>
+    <string name="strength_20">Духовность (вера, смысл жизни)</string>
+    <string name="strength_21">Благоразумие (осторожность)</string>
+    <string name="strength_22">Командный дух</string>
+    <string name="strength_23">Смирение</string>
+    <string name="strength_24">Самоконтроль (саморегуляция)</string>
+
+    <string name="label_answer_1">Точно про меня</string>
+    <string name="label_answer_2">Похоже на меня</string>
+    <string name="label_answer_3">Не знаю</string>
+    <string name="label_answer_4">Не похоже на меня</string>
+    <string name="label_answer_5">Точно не про меня</string>
+
+    <string name="question_text_1">Способность придумывать новые и оригинальные идеи - одна из моих сильных сторон</string>
+    <string name="question_text_2">Я часто отстаивал свою позицию перед лицом сильной оппозиции</string>
+    <string name="question_text_3">Я никогда не бросаю дело, пока оно не закончено</string>
+    <string name="question_text_4">Я всегда выполняю свои обещания</string>
+    <string name="question_text_5">Мне не трудно питаться здоровой пищей</string>
+    <string name="question_text_6">Я всегда смотрю на яркую сторону</string>
+    <string name="question_text_7">Я духовный человек</string>
+    <string name="question_text_8">Я знаю как вести себя в различных социальных ситуациях</string>
+    <string name="question_text_9">Я всегда довожу до конца то, что начал</string>
+    <string name="question_text_10">Мне очень нравится выполнять маленькие просьбы для друзей</string>
+    <string name="question_text_11">В моей жизни есть люди, которые заботятся о моих чувствах и благосостоянии, как о своём собственном</string>
+    <string name="question_text_12">Как лидер, я одинаково отношусь ко всем независимо от их опыта</string>
+    <string name="question_text_13">Я никогда не переедаю, даже если у меня под носом лежат конфеты или печенье</string>
+    <string name="question_text_14">Я применяю свою религию на практике</string>
+    <string name="question_text_15">Я редко держу обиды</string>
+    <string name="question_text_16">Я всегда занят чем-то интересным</string>
+    <string name="question_text_17">Я испытываю прилив неописуемой радости, когда узнаю что-то новое</string>
+    <string name="question_text_18">Мне нравится выдумывать новые способы выполнения дел</string>
+    <string name="question_text_19">Независимо от ситуации, я способен подстроиться</string>
+    <string name="question_text_20">Я никогда не стесняюсь публично выразить непопулярное мнение</string>
+    <string name="question_text_21">Я считаю, что честность - основа доверия</string>
+    <string name="question_text_22">Я прилагаю все усилия, чтобы подбодрить людей в удручённом состоянии</string>
+    <string name="question_text_23">Я отношусь ко всем людям одинаково, независимо от того, кем они могут быть</string>
+    <string name="question_text_24">Одно из моих сильных качеств - помогать группе людей хорошо работать вместе, даже если их мнения расходятся</string>
+    <string name="question_text_25">Я высоко дисциплинированный человек</string>
+    <string name="question_text_26">Я всегда думаю прежде, чем сказать</string>
+    <string name="question_text_27">Я испытываю глубокие чувства, когда вижу что-то прекрасное</string>
+    <string name="question_text_28">Хотя бы раз в день я останавливаюсь, чтобы оценить свои благословения (счастливые моменты)</string>
+    <string name="question_text_29">Несмотря на сложности, я всегда сохраняю надежду на будущее</string>
+    <string name="question_text_30">Моя вера никогда не покидает меня в трудные времена</string>
+    <string name="question_text_31">Я не веду себя, словно я какой-то особенный человек</string>
+    <string name="question_text_32">Я рад возможности сделать чей-то день ярче с помощью смеха</string>
+    <string name="question_text_33">Я никогда не пытаюсь отомстить кому-либо</string>
+    <string name="question_text_34">Я ценю свою способность критически мыслить</string>
+    <string name="question_text_35">У меня есть способность сделать так, чтобы люди чувствовали себя интересными</string>
+    <string name="question_text_36">Я должен отстаивать то, во что я верю, даже несмотря на негативные последствия</string>
+    <string name="question_text_37">Я довожу дела до конца, несмотря на возникающие препятствия</string>
+    <string name="question_text_38">Обожаю делать людей счастливыми</string>
+    <string name="question_text_39">Я самый важный человек в жизни другого человека</string>
+    <string name="question_text_40">Лучше всего я работаю, когда я в группе</string>
+    <string name="question_text_41">Для меня равноценно важны права каждого человека</string>
+    <string name="question_text_42">Я вижу красоту, мимо которой люди проходят, не замечая её</string>
+    <string name="question_text_43">Я вижу большую картину того, что я хочу, чтобы произошло в будущем</string>
+    <string name="question_text_44">Я никогда не хвастаюсь своими достижениями</string>
+    <string name="question_text_45">Я пытаюсь весело проводить время во всех ситуациях</string>
+    <string name="question_text_46">Я люблю то, что я делаю</string>
+    <string name="question_text_47">Меня приводит в восторг, когда я занимаюсь множеством различных дел</string>
+    <string name="question_text_48">Я настоящий "пожизненный обучаемый"</string>
+    <string name="question_text_49">Я всегда придумываю как что-то сделать по-новому</string>
+    <string name="question_text_50">Люди говорят, что я "мудр не по годам"</string>
+    <string name="question_text_51">Моим обещаниям можно верить</string>
+    <string name="question_text_52">Я всем даю шанс</string>
+    <string name="question_text_53">Чтобы быть эффективным лидером, я отношусь ко всем одинаково</string>
+    <string name="question_text_54">Я никогда не желаю того, что в долгострочной перспективе принесёт мне вред, даже если на короткое время это доставит мне удовольствие</string>
+    <string name="question_text_55">Я часто теряю дар речи от красоты, изображённой в фильме</string>
+    <string name="question_text_56">Я очень благодарный человек</string>
+    <string name="question_text_57">Я пытаюсь добавить нотку юмора ко всему, что делаю</string>
+    <string name="question_text_58">Я с нетерпением ожидаю каждый новый день</string>
+    <string name="question_text_59">Я считаю, что лучше всего простить и забыть</string>
+    <string name="question_text_60">У меня много интересов</string>
+    <string name="question_text_61">Когда тема обязывает, я могу мыслить очень рационально</string>
+    <string name="question_text_62">Мои друзья говорят, что у меня много новых и оригинальных идей</string>
+    <string name="question_text_63">Я всегда способен посмотреть на вещи и увидеть большую картину</string>
+    <string name="question_text_64">Я всегда отстаиваю свои верования</string>
+    <string name="question_text_65">Я не сдаюсь</string>
+    <string name="question_text_66">Я верен своим ценностям</string>
+    <string name="question_text_67">Я всегда ощущаю присутствие любви в своей жизни</string>
+    <string name="question_text_68">Я всегда могу придерживаться диеты</string>
+    <string name="question_text_69">Каждый раз я сначала подумаю о последствиях, а потом делаю</string>
+    <string name="question_text_70">Я всегда осознаю естественную красоту окружающей среды</string>
+    <string name="question_text_71">Моя вера делает меня тем/той, кем я являюсь</string>
+    <string name="question_text_72">У меня много энергии</string>
+    <string name="question_text_73">Я могу найти что-то интересное в любой ситуации</string>
+    <string name="question_text_74">Я всё время читаю</string>
+    <string name="question_text_75">Продумывать всё до конца - часть моей натуры</string>
+    <string name="question_text_76">Я оригинальный мыслитель</string>
+    <string name="question_text_77">Я хорошо ощущаю, что чувствуют другие люди</string>
+    <string name="question_text_78">У меня зрелый взгляд на жизнь</string>
+    <string name="question_text_79">Меня вдохновляет счастливая судьба других также, как моя собственная</string>
+    <string name="question_text_80">Я могу выразить любовь другому человеку</string>
+    <string name="question_text_81">Я поддерживаю всех членов команды или группы без исключения</string>
+    <string name="question_text_82">Мои друзья всегда говорят мне, что я решительный, но справедливый лидер</string>
+    <string name="question_text_83">Я всегда чётко разделяю правильное от неправильного</string>
+    <string name="question_text_84">Я испытываю благодарность за то, что я получил в жизни</string>
+    <string name="question_text_85">Я знаю, что достигну тех целей, которые поставил перед собой</string>
+    <string name="question_text_86">Я редко привлекаю к себе внимание</string>
+    <string name="question_text_87">У меня отличное чувство юмора</string>
+    <string name="question_text_88">Я редко пытаюсь поквитаться</string>
+    <string name="question_text_89">Я всегда взвешиваю "за" и "против"</string>
+    <string name="question_text_90">Я придерживаюсь того, что я решил сделать</string>
+    <string name="question_text_91">Мне доставляет удовольствие быть добрым к людям</string>
+    <string name="question_text_92">Я могу принять любовь от людей</string>
+    <string name="question_text_93">Я всегда уважаю лидеров моей группы, даже если я не согласен с ними</string>
+    <string name="question_text_94">Даже если мне кто-то не нравится, я продолжаю относиться к нему/ней справедливо</string>
+    <string name="question_text_95">Как лидер, я стараюсь, чтобы все члены группы были счастливы</string>
+    <string name="question_text_96">Я очень осторожный человек</string>
+    <string name="question_text_97">Я прихожу в трепет от простых вещей в жизни, которые остальные принимают как должное</string>
+    <string name="question_text_98">Когда я смотрю на свою жизнь, то нахожу множество поводов для благодарности</string>
+    <string name="question_text_99">Мне говорили, что скромность - одна из моих самых заметных характеристик</string>
+    <string name="question_text_100">Обычно я хочу дать человеку ещё один шанс</string>
+    <string name="question_text_101">Я думаю, что моя жизнь крайне интересна</string>
+    <string name="question_text_102">Я читаю огромное количество книг</string>
+    <string name="question_text_103">Я стараюсь привести хорошие доводы для своих важных решений</string>
+    <string name="question_text_104">Я всегда знаю что сказать, чтобы люди почувствовали себя хорошо</string>
+    <string name="question_text_105">Я могу не сказать этого другим, но считаю себя мудрым человеком</string>
+    <string name="question_text_106">Для меня важно уважать решения, принятые моей группой</string>
+    <string name="question_text_107">Я всегда делаю осторожный выбор</string>
+    <string name="question_text_108">Я испытываю глубокое чувство признательности каждый день</string>
+    <string name="question_text_109">Если мне плохо, я всегда вспоминаю о хорошем в своей жизни</string>
+    <string name="question_text_110">Мои убеждения делают мою жизнь важной</string>
+    <string name="question_text_111">Я просыпаюсь с чувством предвкушения возможностей нового дня</string>
+    <string name="question_text_112">Я люблю читать нехудожественную литературу просто для наслаждения</string>
+    <string name="question_text_113">Люди считают меня мудрым человеком</string>
+    <string name="question_text_114">Я смелый человек</string>
+    <string name="question_text_115">Люди доверяют мне свои секреты</string>
+    <string name="question_text_116">Я с радостью пожертвую своими интересами ради выгоды всей группы, частью которой я являюсь</string>
+    <string name="question_text_117">Я считаю, что стоит выслушать мнение каждого</string>
+    <string name="question_text_118">Люди тянутся ко мне из-за моего смирения</string>
+    <string name="question_text_119">Меня знают за моё хорошее чувство юмора</string>
+    <string name="question_text_120">Люди характеризуют меня, как преисполненного энтузиазмом</string>
+
+    <string-array name="questions">
+        <item>@string/question_text_1</item>
+        <item>@string/question_text_2</item>
+        <item>@string/question_text_3</item>
+        <item>@string/question_text_4</item>
+        <item>@string/question_text_5</item>
+        <item>@string/question_text_6</item>
+        <item>@string/question_text_7</item>
+        <item>@string/question_text_8</item>
+        <item>@string/question_text_9</item>
+        <item>@string/question_text_10</item>
+        <item>@string/question_text_11</item>
+        <item>@string/question_text_12</item>
+        <item>@string/question_text_13</item>
+        <item>@string/question_text_14</item>
+        <item>@string/question_text_15</item>
+        <item>@string/question_text_16</item>
+        <item>@string/question_text_17</item>
+        <item>@string/question_text_18</item>
+        <item>@string/question_text_19</item>
+        <item>@string/question_text_20</item>
+        <item>@string/question_text_21</item>
+        <item>@string/question_text_22</item>
+        <item>@string/question_text_23</item>
+        <item>@string/question_text_24</item>
+        <item>@string/question_text_25</item>
+        <item>@string/question_text_26</item>
+        <item>@string/question_text_27</item>
+        <item>@string/question_text_28</item>
+        <item>@string/question_text_29</item>
+        <item>@string/question_text_30</item>
+        <item>@string/question_text_31</item>
+        <item>@string/question_text_32</item>
+        <item>@string/question_text_33</item>
+        <item>@string/question_text_34</item>
+        <item>@string/question_text_35</item>
+        <item>@string/question_text_36</item>
+        <item>@string/question_text_37</item>
+        <item>@string/question_text_38</item>
+        <item>@string/question_text_39</item>
+        <item>@string/question_text_40</item>
+        <item>@string/question_text_41</item>
+        <item>@string/question_text_42</item>
+        <item>@string/question_text_43</item>
+        <item>@string/question_text_44</item>
+        <item>@string/question_text_45</item>
+        <item>@string/question_text_46</item>
+        <item>@string/question_text_47</item>
+        <item>@string/question_text_48</item>
+        <item>@string/question_text_49</item>
+        <item>@string/question_text_50</item>
+        <item>@string/question_text_51</item>
+        <item>@string/question_text_52</item>
+        <item>@string/question_text_53</item>
+        <item>@string/question_text_54</item>
+        <item>@string/question_text_55</item>
+        <item>@string/question_text_56</item>
+        <item>@string/question_text_57</item>
+        <item>@string/question_text_58</item>
+        <item>@string/question_text_59</item>
+        <item>@string/question_text_60</item>
+        <item>@string/question_text_61</item>
+        <item>@string/question_text_62</item>
+        <item>@string/question_text_63</item>
+        <item>@string/question_text_64</item>
+        <item>@string/question_text_65</item>
+        <item>@string/question_text_66</item>
+        <item>@string/question_text_67</item>
+        <item>@string/question_text_68</item>
+        <item>@string/question_text_69</item>
+        <item>@string/question_text_70</item>
+        <item>@string/question_text_71</item>
+        <item>@string/question_text_72</item>
+        <item>@string/question_text_73</item>
+        <item>@string/question_text_74</item>
+        <item>@string/question_text_75</item>
+        <item>@string/question_text_76</item>
+        <item>@string/question_text_77</item>
+        <item>@string/question_text_78</item>
+        <item>@string/question_text_79</item>
+        <item>@string/question_text_80</item>
+        <item>@string/question_text_81</item>
+        <item>@string/question_text_82</item>
+        <item>@string/question_text_83</item>
+        <item>@string/question_text_84</item>
+        <item>@string/question_text_85</item>
+        <item>@string/question_text_86</item>
+        <item>@string/question_text_87</item>
+        <item>@string/question_text_88</item>
+        <item>@string/question_text_89</item>
+        <item>@string/question_text_90</item>
+        <item>@string/question_text_91</item>
+        <item>@string/question_text_92</item>
+        <item>@string/question_text_93</item>
+        <item>@string/question_text_94</item>
+        <item>@string/question_text_95</item>
+        <item>@string/question_text_96</item>
+        <item>@string/question_text_97</item>
+        <item>@string/question_text_98</item>
+        <item>@string/question_text_99</item>
+        <item>@string/question_text_100</item>
+        <item>@string/question_text_101</item>
+        <item>@string/question_text_102</item>
+        <item>@string/question_text_103</item>
+        <item>@string/question_text_104</item>
+        <item>@string/question_text_105</item>
+        <item>@string/question_text_106</item>
+        <item>@string/question_text_107</item>
+        <item>@string/question_text_108</item>
+        <item>@string/question_text_109</item>
+        <item>@string/question_text_110</item>
+        <item>@string/question_text_111</item>
+        <item>@string/question_text_112</item>
+        <item>@string/question_text_113</item>
+        <item>@string/question_text_114</item>
+        <item>@string/question_text_115</item>
+        <item>@string/question_text_116</item>
+        <item>@string/question_text_117</item>
+        <item>@string/question_text_118</item>
+        <item>@string/question_text_119</item>
+        <item>@string/question_text_120</item>
+    </string-array>
+
+    <string-array name="strengths">
+        <item>@string/strength_1</item>
+        <item>@string/strength_2</item>
+        <item>@string/strength_3</item>
+        <item>@string/strength_4</item>
+        <item>@string/strength_5</item>
+        <item>@string/strength_6</item>
+        <item>@string/strength_7</item>
+        <item>@string/strength_8</item>
+        <item>@string/strength_9</item>
+        <item>@string/strength_10</item>
+        <item>@string/strength_11</item>
+        <item>@string/strength_12</item>
+        <item>@string/strength_13</item>
+        <item>@string/strength_14</item>
+        <item>@string/strength_15</item>
+        <item>@string/strength_16</item>
+        <item>@string/strength_17</item>
+        <item>@string/strength_18</item>
+        <item>@string/strength_19</item>
+        <item>@string/strength_20</item>
+        <item>@string/strength_21</item>
+        <item>@string/strength_22</item>
+        <item>@string/strength_23</item>
+        <item>@string/strength_24</item>
+    </string-array>
+
+    <string-array name="virtues">
+        <item>@string/virtue_1</item>
+        <item>@string/virtue_2</item>
+        <item>@string/virtue_3</item>
+        <item>@string/virtue_4</item>
+        <item>@string/virtue_5</item>
+        <item>@string/virtue_6</item>
+    </string-array>
+
+    <string-array name="icons">
+        <item>@drawable/str1</item>
+        <item>@drawable/str2</item>
+        <item>@drawable/str3</item>
+        <item>@drawable/str4</item>
+        <item>@drawable/str5</item>
+        <item>@drawable/str6</item>
+        <item>@drawable/str7</item>
+        <item>@drawable/str8</item>
+        <item>@drawable/str9</item>
+        <item>@drawable/str10</item>
+        <item>@drawable/str11</item>
+        <item>@drawable/str12</item>
+        <item>@drawable/str13</item>
+        <item>@drawable/str14</item>
+        <item>@drawable/str15</item>
+        <item>@drawable/str16</item>
+        <item>@drawable/str17</item>
+        <item>@drawable/str18</item>
+        <item>@drawable/str19</item>
+        <item>@drawable/str20</item>
+        <item>@drawable/str21</item>
+        <item>@drawable/str22</item>
+        <item>@drawable/str23</item>
+        <item>@drawable/str24</item>
+    </string-array>
+	
