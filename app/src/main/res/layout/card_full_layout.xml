@@ -38,7 +38,7 @@
                 android:maxLines="1"
                 android:layout_weight="1"/>
 
-            <ImageView
+            <!--ImageView
                 android:id="@+id/cf_menu_more"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
@@ -46,17 +46,108 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 app:srcCompat="@drawable/ic_more"
-                android:contentDescription="@string/label_more"/>
+                android:contentDescription="@string/label_more"/-->
 
         </LinearLayout>
 
-
-        <TextView
-            android:id="@+id/cf_description"
-            android:layout_margin="10dp"
-            android:textAppearance="?android:textAppearanceMedium"
+        <ImageView
+            android:id="@+id/cf_card17"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cf_label1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/primary_text_light"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+                <TextView
+                    android:id="@+id/cf_paragraph1"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/primary_text_light"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+                <TextView
+                    android:id="@+id/cf_label2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/primary_text_light"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+                <TextView
+                    android:id="@+id/cf_paragraph2"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/primary_text_light"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+                <TextView
+                    android:id="@+id/cf_label3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/primary_text_light"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+                <TextView
+                    android:id="@+id/cf_paragraph3"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/primary_text_light"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+                <TextView
+                    android:id="@+id/cf_label4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/primary_text_light"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+                <TextView
+                    android:id="@+id/cf_paragraph4"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/primary_text_light"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+                <TextView
+                    android:id="@+id/cf_label5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/primary_text_light"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+                <TextView
+                    android:id="@+id/cf_paragraph5"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/primary_text_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </ScrollView>
 
     </LinearLayout>
 

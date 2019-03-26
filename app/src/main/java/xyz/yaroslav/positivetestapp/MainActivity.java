@@ -2,17 +2,18 @@ package xyz.yaroslav.positivetestapp;
 
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Gravity;
-import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private int cur_frag = 0;
+
+    public void setCur_frag(int cur_frag) {
+        this.cur_frag = cur_frag;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,12 +28,14 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.nav_cards:
                     displayCardsFragment();
                     break;
+                    /*
                 case R.id.nav_notes:
                     break;
                 case R.id.nav_settings:
                     break;
                 case R.id.nav_tests:
                     break;
+                    */
             }
 
             menuItem.setChecked(false);
@@ -44,17 +47,23 @@ public class MainActivity extends AppCompatActivity {
             return true;
         });
 
+        /*
         if (savedInstanceState != null) {
             int saved_key = savedInstanceState.getInt("frag");
-            Log.i("SAVED_STATE", "fragment is: " + saved_key);
-            if (saved_key == 1) {
-                displayCardsFragment();
-            } else {
-                displayStartFragment();
+            switch (saved_key) {
+                case 1:
+                    displayCardsFragment();
+                    break;
+                default:
+                    displayStartFragment();
+                    break;
             }
         } else {
             displayStartFragment();
         }
+        */
+
+        displayCardsFragment();
     }
 
     @Override

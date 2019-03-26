@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">Positive App</string>
+    <string name="app_name">Позитивка</string>
 
-    <string name="label_more">More</string>
-    <string name="label_icon">Icon</string>
-    <string name="label_cards">Cards</string>
-    <string name="label_settings">Settings</string>
-    <string name="label_tests">Tests</string>
-    <string name="label_notes">Notes</string>
+    <string name="label_more">Дополнительно</string>
+    <string name="label_icon">Изображение</string>
+    <string name="label_cards">Карточки</string>
+    <string name="label_settings">Настройки</string>
+    <string name="label_tests">Тесты</string>
+    <string name="label_notes">Заметки</string>
 
     <string-array name="icons">
         <item>img1</item>
@@ -45,24 +45,211 @@
     <string name="card_title_15" translatable="false">Окситоцин</string>
     <string name="card_title_16" translatable="false">Эндорфин</string>
     <string name="card_title_17" translatable="false">Шкала сознания Дэвида Хокинса</string>
+    
+    <string name="card_d1_1" translatable="false">Здоровая тревога помогает предостеречь нас от возможных потенциальных опасностей. Похожа на мотивацию, но в ней основа - страх.</string>
+    <string name="card_d1_2" translatable="false">Энергия поддерживающая самосохранение. Готовность к потенциальным трудностям.</string>
+    <string name="card_d1_3" translatable="false">Какие действия я должен предпринять? В самом худшем случае что будет? Сделал ли я все возможное? или есть вещи, которые от меня не зависят?</string>
+    <string name="card_d1_4" translatable="false">Постоянное состояние тревоги, страха, замкнутость, нежелание пробовать новое и рисковать, бессонница, навязчивые мысли.</string>
+    <string name="card_d1_5" translatable="false">Она помогает человеку предотвращать всевозможные потенциальные угрозы. Тревоге свойственно крутить самые худшие сценарии по кругу, заставляя нас действовать. После того, как я сделал все, что от меня зависело, тревогу важно поблагодарить и отпустить. Отпустить можно заземлившись.</string>
 
-    <string name="card_desc_1" translatable="false">Здоровая тревога помогает предостеречь нас от возможных потенциальных опасностей</string>
-    <string name="card_desc_2" translatable="false">Здоровая энергия - когда хочешь чего-то</string>
-    <string name="card_desc_3" translatable="false">Защита границ, добыча ресурса, целенаправленное изменение статуса кво, подчинение чьей-то воли</string>
-    <string name="card_desc_4" translatable="false">Восстановление баланса в отношениях, обновление контракта, пауза, переосмысление, выбор</string>
-    <string name="card_desc_5" translatable="false">Целостная личность, сбалансированные прочные отношения</string>
-    <string name="card_desc_6" translatable="false">Признание общества, принадлежность, взаимозависимость, близость</string>
-    <string name="card_desc_7" translatable="false">Непроходящее горе, которое не приносит ни решения, ни отпускания, ни облегчения. Депрессия, апатия</string>
-    <string name="card_desc_8" translatable="false">Физическое расслабление</string>
-    <string name="card_desc_9" translatable="false">Есть решения, которые мы принимаем повторно</string>
-    <string name="card_desc_10" translatable="false">Первый этап - сиуационный интерес</string>
-    <string name="card_desc_11" translatable="false">Отстранение, выставление границ, отделение, перерыв</string>
-    <string name="card_desc_12" translatable="false">Функция: спасти и сохранить</string>
-    <string name="card_desc_13" translatable="false">Дофамин - гормон счастья, который выделяется, когда мы идем к цели и предвкушаем вкус её достижения</string>
-    <string name="card_desc_14" translatable="false">Выработка серотонина стимулируется вашим социальным статусом</string>
-    <string name="card_desc_15" translatable="false">Всё, начиная от прикосновения рук до ощущения поддержки - даёт выработку окситоцина</string>
-    <string name="card_desc_16" translatable="false">Эйфория - обычное описание чувства, которое приносит нам эндорфин</string>
-    <string name="card_desc_17" translatable="false">Шкала сознания Дэвида Хокинса</string>
+    <string name="card_p1_1" translatable="false"> </string>
+    <string name="card_p1_2" translatable="false">Дары:</string>
+    <string name="card_p1_3" translatable="false">Вопросы:</string>
+    <string name="card_p1_4" translatable="false">Искажение:</string>
+    <string name="card_p1_5" translatable="false">Практика работы с тревогой:</string>
+
+    <string name="card_d2_1" translatable="false">Это здоровая энергия - когда хочешь чего-то. Это ощущение предвкушения, это не сам процесс контакта. Это тот момент, когда внутренние потребности или стремления оформляются на уровне сознания.</string>
+    <string name="card_d2_2" translatable="false">Основная функция желания - это веселье, радость, удовлетворение и чувство уверенности.</string>
+    <string name="card_d2_3" translatable="false">Что я хочу? Что я буду чувствовать когда это получу? Могу ли я почувствовать это прям сейчас? Как я могу наслаждаться в процессе? Готов ли я платить эту цену за желаемое?</string>
+    <string name="card_d2_4" translatable="false">Важно иметь осуществимые желания. Если желания не осуществимые, они фрустрируются, Фрустрация - это болезненный процесс для психики - а поэтому если постоянно иметь неосуществимые желания - человек попадает в состояние апатии.</string>
+    <string name="card_d2_5" translatable="false">Невозникновение желания, частая смена желаемого, постоянное чувство неудовлетворенности, </string>
+
+    <string name="card_p2_1" translatable="false"> </string>
+    <string name="card_p2_2" translatable="false">Функции желания: </string>
+    <string name="card_p2_3" translatable="false">Вопросы:</string>
+    <string name="card_p2_4" translatable="false">Практика:</string>
+    <string name="card_p2_5" translatable="false">Нарушение:</string>
+
+    <string name="card_d3_1" translatable="false">Защита границ, добыча ресурса, целенаправленное изменение статуса кво, подчинение чьей-то воли</string>
+    <string name="card_d3_2" translatable="false">Злость помогает человеку вырабатывать здоровые границы, честь, убеждения, защиту себя и своих близких, здоровое отстранение.</string>
+    <string name="card_d3_3" translatable="false">Что должно быть защищено? Какая угрожает опасность? Что я хочу получить? Какую потребность мне важно удовлетворить? Что я не могу больше терпеть и хочу изменить? Чем мне важно, чтоб другой человек исполнил мою волю вопреки собственному желанию? Что мне нужно восстановить?</string>
+    <string name="card_d3_4" translatable="false">Подавление: потерянность, неопределенность, самозаброшенность, апатия, депрессия, потеря границ.
+        Экспрессивность: циклы ярости, которые создают жесткие границы, ненависть, предубеждения, изоляция</string>
+    <string name="card_d3_5" translatable="false">Распредели интенсивное пламя злости на своей границе вместо того, чтобы подавлять ее или обрушивать на кого-то или что-то - затем скажи себе правду и позволь предпринять корректирующие действия. Это выправит твои границы в здоровом виде, что защитит тебя и твои отношения.</string>
+
+    <string name="card_p3_1" translatable="false"> </string>
+    <string name="card_p3_2" translatable="false">Основные функции злости:</string>
+    <string name="card_p3_3" translatable="false">Вопросы, которые помогают понять источник злости:</string>
+    <string name="card_p3_4" translatable="false">Признаки блока и искажения злости:</string>
+    <string name="card_p3_5" translatable="false">Практика работы со злостью:</string>
+
+    <string name="card_d4_1" translatable="false">Восстановление баланса в отношениях, обновление контракта, пауза, переосмысление, выбор</string>
+    <string name="card_d4_2" translatable="false">Где нарушен баланс? Какие мои ожидания не реализовались? Как нарушен договор? Обговорен ли заранее контракт с обоих сторон?</string>
+    <string name="card_d4_3" translatable="false">Вечная позиция жертвы, не равный вклад в отношения (меньший), инфантильность, бессилие. Либо нет обиды - доминирование, агрессия, подавление воли.</string>
+    <string name="card_d4_4" translatable="false">Четко и ясно понять свои ожидания, которые не встречены. Понять, что нужно, чтоб восстановить баланс. Померить обе стороны на себе. Четко определить для себя, что мне нужно, чтоб восстановить баланс. Поговорить, заявить, сделать осознанный выбор в пользу или врозь отношений.</string>
+    <string name="card_d4_5" translatable="false"> </string>
+
+    <string name="card_p4_1" translatable="false">Подарки:</string>
+    <string name="card_p4_2" translatable="false">Внутренние вопросы:</string>
+    <string name="card_p4_3" translatable="false">Знаки нарушения:</string>
+    <string name="card_p4_4" translatable="false">Практика:</string>
+    <string name="card_p4_5" translatable="false"> </string>
+
+    <string name="card_d5_1" translatable="false">Целостная личность, сбалансированные прочные отношения. Указывает на нарушение собственной ценности или на нарушение правил контракта с другим человеком.</string>
+    <string name="card_d5_2" translatable="false">Как тяжесть на душе - в области груди. Мятежность.</string>
+    <string name="card_d5_3" translatable="false">Какую ценность я нарушил(а)? Является ли эта ценность моей и важна ли эта ценность мне? Если является и важна, извинится и восстановить ущерб.</string>
+    <string name="card_d5_4" translatable="false">Односторонние контракты - такие люди хотят, чтоб люди выполняли свою часть по отношению к ним, но сами свою часть выполнять не хотят. Часто аферисты, предатели, изменщики. Такие люди вынуждены все время искать новые отношения и новые связи, потому что стабильные равносторонние отношения они выстроить не в силах.</string>
+    <string name="card_d5_5" translatable="false"> </string>
+
+    <string name="card_p5_1" translatable="false">Основная функция:</string>
+    <string name="card_p5_2" translatable="false">В теле проявляется:</string>
+    <string name="card_p5_3" translatable="false">Вопросы, которые помогают восстановиться из вины:</string>
+    <string name="card_p5_4" translatable="false">Признаки блока стыда:</string>
+    <string name="card_p5_5" translatable="false"> </string>
+
+    <string name="card_d6_1" translatable="false">Признание общества, принадлежность, взаимозависимость, близость</string>
+    <string name="card_d6_2" translatable="false">Указать на отклонение от признанных правил общества, к которому я принадлежу, Для чувства стыда - нужны свидетели - те, перед кем стыдно. Если никого нет и человек нарушает правила - это вина.В теле проявляется - краснотой лица. Лицо заливается кровью и хочется исчезнуть. Есть ощущение порочности и недостойности. Очень тяжелое эмоциональное чувство.</string>
+    <string name="card_d6_3" translatable="false">Какую именно ценность я нарушил? Разделяю ли я эту ценность лично? Нравится ли мне общество с такой ценностью? Я хочу поменять общество или хочу принять новую ценность?</string>
+    <string name="card_d6_4" translatable="false">Если я выбираю общество - то, посмотреть как я могу восстановиться из стыда.</string>
+    <string name="card_d6_5" translatable="false">Извинится и покрыть ущерб.</string>
+
+    <string name="card_p6_1" translatable="false">Подарки:</string>
+    <string name="card_p6_2" translatable="false">Основные функции стыда:</string>
+    <string name="card_p6_3" translatable="false">Вопросы, которые помогают восстановиться из стыда:</string>
+    <string name="card_p6_4" translatable="false"> </string>
+    <string name="card_p6_5" translatable="false"> </string>
+
+    <string name="card_d7_1" translatable="false">Непреходящее горе, которое не приносит не решения, не отпускания, не облегчения. Депрессия, апатия.</string>
+    <string name="card_d7_2" translatable="false">Пустота, невозможность переживать никакие другие эмоции, диссоцииорованность.</string>
+    <string name="card_d7_3" translatable="false">Отпусти то, что больше не служит тебе, не работает, не приносит удовольствия. Это высвобождает поток, слезы и заживляющую энергию а твое тело и в твою душу. Когда ты сможешь по-настоящему отпустить, восстановление и расслабление обязательно последуют.</string>
+    <string name="card_d7_4" translatable="false">Вам просто нужно остановится, "УРОНИТЬ" себя (что заземляет почти автоматически) и установить ваши границы сильно (стабильно) и вы спрашиваете внутренние вопросы: "Что нужно отпустить? и Что нужно восстановить?"</string>
+    <string name="card_d7_5" translatable="false">Все, что нужно - это создавать святое место для вашей печали, выставлением сильных границ (иногда изоляцией) и отведением места и времени для соприкосновения с печалью.</string>
+
+    <string name="card_p7_1" translatable="false"> </string>
+    <string name="card_p7_2" translatable="false">Блок печали:</string>
+    <string name="card_p7_3" translatable="false">Практика:</string>
+    <string name="card_p7_4" translatable="false">Практика печали:</string>
+    <string name="card_p7_5" translatable="false"> </string>
+
+    <string name="card_d8_1" translatable="false"> - это физическое расслабление. Предоставьте себе условия, в которых вы будете себя чувствовать максимально расслабленно. Когда вы расслабитесь, обратите все ваше внимание на это расслабление, чтобы ваш мозг начал привыкать к этому ощущению.</string>
+    <string name="card_d8_2" translatable="false"> - ощущение ментальной свободы. Помните, медитация должна быть легкой. Вы ничего особенного не делаете, только наблюдаете за своим дыханием, которое происходит само по себе. Вам не нужно никуда идти, ничего делать, не добиваться никакой цели.</string>
+    <string name="card_d8_3" translatable="false"> - это путь любви и добра. Причина почему смотреть на ребенка и наслаждаться так легко и просто - потому что ощущение любви и добра поднимаются сами по себе. Как альтернативу, можно вспомнить что-нибудь приятное, где вы ощущали любовь и добро, и когда вы подключитесь к этим воспоминаниям, сделайте глубокий медленный осознанный вдох.</string>
+    <string name="card_d8_4" translatable="false"> </string>
+    <string name="card_d8_5" translatable="false"> </string>
+
+    <string name="card_p8_1" translatable="false">Первое</string>
+    <string name="card_p8_2" translatable="false">Второе</string>
+    <string name="card_p8_3" translatable="false">Третий путь</string>
+    <string name="card_p8_4" translatable="false"> </string>
+    <string name="card_p8_5" translatable="false"> </string>
+
+    <string name="card_d9_1" translatable="false">Есть решения, которые мы принимаем повторно. Чтоб упростить повторные принятия решения мы обратимся к эффективному механизм нашего мозга - авторизация.</string>
+    <string name="card_d9_2" translatable="false">Сначала мы учимся водить машину, чистить зубы, кататься на лыжах, а после стабильных практик мы начинаем делать это автоматически. Так вот повторные решения важно перевести в более автоматизированные практики.</string>
+    <string name="card_d9_3" translatable="false"> - это правило. Если вы для себя решили, что у вы будете всегда пристегивать ремень безопасности когда вы садитесь в машину, вы не принимаете вновь это решение. Вы просто следуете правилу, которое вы приняли для себя.</string>
+    <string name="card_d9_4" translatable="false"> - условия по умолчанию. Это как расстановка мебели в доме. Когда у вас нет гостей, ваша мебель стоит определенным образом и в основном - вы просто поддерживаете все в том состоянии, в котором вы когда-то решили все расставить.</string>
+    <string name="card_d9_5" translatable="false"> - это стандарты. Когда у вас есть стандарт чистоты, красоты, качества, интеллекта, доброты - вам легче принимать решения.</string>
+
+    <string name="card_p9_1" translatable="false"> </string>
+    <string name="card_p9_2" translatable="false"> </string>
+    <string name="card_p9_3" translatable="false">Первая такая практика</string>
+    <string name="card_p9_4" translatable="false">Вторая практика</string>
+    <string name="card_p9_5" translatable="false">Третья практика</string>
+
+    <string name="card_d10_1" translatable="false">Он зависит от ситуации, в которую мы попадаем. Например, сидите вы на свадьбе и одна из гостей очень красиво спела для новобрачных. Вас это восхитило, вызвало интерес попробовать научиться петь как она. </string>
+    <string name="card_d10_2" translatable="false"> - человек должен совершить действие. Например, найти учителя по вокалу и записаться и сходить раз 10, стабильно и не пропуская. Если это случилось - Вы добрались до второго уровня интереса - его называли ПОДДЕРЖИВАЩИЙ интерес. </string>
+    <string name="card_d10_3" translatable="false"> - это как-раз тот, на котором становится НЕ ИНТЕРЕСНО. Вот как-раз на этом этапе большинство людей и бросают начатое. После 10 усердных занятий обычно наступает рутина, Вы уже знаете, чего ожидать от занятия, кто там будет, что у вас будет получаться, а что нет, становится все обычно и не интересно. Не торопитесь делать выводы и бросать начатое – Вы просто-напросто попали на третью стадию интереса – ИНДИВИДУАЛЬНЫЙ ИНТЕРЕС.</string>
+    <string name="card_d10_4" translatable="false">Ученые выявили 5 факторов, которые человек может внедрить в свои занятия, для того, чтоб поддерживать уровень мотивации, чтоб не бросить начатое.</string>
+    <string name="card_d10_5" translatable="false"> </string>
+
+    <string name="card_p10_1" translatable="false">Первый этап - это ситуационный интерес.</string>
+    <string name="card_p10_2" translatable="false">Для того, чтобы перейти на второй этап интереса </string>
+    <string name="card_p10_3" translatable="false">Третий этап интереса</string>
+    <string name="card_p10_4" translatable="false"> </string>
+    <string name="card_p10_5" translatable="false"> </string>
+
+    <string name="card_d11_1" translatable="false">Отстранение, выставление границ, отделение, перерыв.</string>
+    <string name="card_d11_2" translatable="false">Мало энергии</string>
+    <string name="card_d11_3" translatable="false">Что я избегаю? Что нужно поднять на уровень сознания?</string>
+    <string name="card_d11_4" translatable="false">Монотонное безразличие, бесстрастие, отвлекаемость которое приостанавливает творение</string>
+    <string name="card_d11_5" translatable="false">Отдать честь потребности быть отдельным и отстраненным без того, чтоб скидывать с себя все ответственности. Использовать злость под апатией для восстановления своих границ.</string>
+
+    <string name="card_p11_1" translatable="false">Подарки:</string>
+    <string name="card_p11_2" translatable="false">Проявление в теле:</string>
+    <string name="card_p11_3" translatable="false">Внутренние вопросы:</string>
+    <string name="card_p11_4" translatable="false">Знаки прерывания:</string>
+    <string name="card_p11_5" translatable="false">Практика:</string>
+
+    <string name="card_d12_1" translatable="false">Спасти и сохранить.</string>
+    <string name="card_d12_2" translatable="false">Учащенное сердцебиение, прилив крови в ноги, потные ладони, задержка дыхания, увеличенные зрачки и поднятые брови.</string>
+    <string name="card_d12_3" translatable="false">Мобилизовать все необходимые органы чувств для спасения. Усилить слух, зрение, концентрацию внимания. Кровь приливает в ноги, чтоб можно было убежать. Страх проявляется только когда присутствует реальная опасность здесь и сейчас. Когда - это возможность опасности в будущем - это тревога.</string>
+    <string name="card_d12_4" translatable="false">Атрофированное чувство страха - встречается редко, как правило бандиты или экстремалы.</string>
+    <string name="card_d12_5" translatable="false">Человек, который постоянно находится в страхе- это возможно только в меру внешних обстоятельств - война, работа связанная с опасностью, опасный район и т.д.</string>
+
+    <string name="card_p12_1" translatable="false">Функция:</string>
+    <string name="card_p12_2" translatable="false">Проявление в теле:</string>
+    <string name="card_p12_3" translatable="false">Функции страха:</string>
+    <string name="card_p12_4" translatable="false">Знаки нарушения:</string>
+    <string name="card_p12_5" translatable="false"> </string>
+
+    <string name="card_d13_1" translatable="false">Допамин - гормон счастья, который выделяется, когда мы идем у цели и предвкушаем вкус достижения цели.</string>
+    <string name="card_d13_2" translatable="false">Он указывает нам куда вкладывать свою энергию-от чего мы получим удовлетворение и удовольствие. Он дает подъем энергии в тот момент, когда мы видим, что финишная линия уже близка, когда мы уже можем почувствовать вкус вознаграждения.</string>
+    <string name="card_d13_3" translatable="false">Уровень дофамина повышается, когда мы видим новую цель и вознаграждение. Например, мы пробуем брауни в первый раз в новой кофейне. Уровень дофамина до первого укуса будет колоссально высокий, но упадет до ноля в тот момент, когда вы доедите брауни до конца. Организм сохранит дофамин для новых целей и новых вознаграждений</string>
+    <string name="card_d13_4" translatable="false">Празднуйте - радуйтесь маленьким победам! Настройте свои ожидания таким образом, чтоб у вам были каждодневные маленькие цели и маленькие победы.</string>
+    <string name="card_d13_5" translatable="false"> </string>
+
+    <string name="card_p13_1" translatable="false"> </string>
+    <string name="card_p13_2" translatable="false"> </string>
+    <string name="card_p13_3" translatable="false"> </string>
+    <string name="card_p13_4" translatable="false">Чтобы поддерживать уровень дофамина:</string>
+    <string name="card_p13_5" translatable="false"> </string>
+
+    <string name="card_d14_1" translatable="false">Выработка серотонина стимулируется вашим социальным статусом, признанием ваших достижений, мастерством навыков.</string>
+    <string name="card_d14_2" translatable="false">Люди унаследовали мозг, который чувствует себя комфортно в случае доминирования в социальной группе. Мы ищем способы получать позитивные эмоции от осознания своей значимости в обществе предпочтительно без конфликтов. Каждый раз, когда мы достигаем превосходство - мы получаем порцию серотонина. Серотонин нам дарит чувство важности.</string>
+    <string name="card_d14_3" translatable="false">Старайтесь, хотя бы раз в день признавать какое-нибудь достижение в присутствии другого человека: "Посмотри, что я делала! Посмотри, какая я молодец!"</string>
+    <string name="card_d14_4" translatable="false">Наслаждайтесь социальным окружением!</string>
+    <string name="card_d14_5" translatable="false">Обращайте внимание на то, какое влияние вы оказываете.</string>
+
+    <string name="card_p14_1" translatable="false"> </string>
+    <string name="card_p14_2" translatable="false"> </string>
+    <string name="card_p14_3" translatable="false">Просто раз в день обязательно высказывайте сами себе удовлетворение от чего-то сделанного.</string>
+    <string name="card_p14_4" translatable="false"> </string>
+    <string name="card_p14_5" translatable="false"> </string>
+
+    <string name="card_d15_1" translatable="false">Все, начиная от прикосновения рук до ощущения поддержки-дает выработку окситоцина. Держаться за руки стимулирует небольшую выработку окситоцина, но когда повторяется со временем, создает нейроную связь, которая создает моментальное ощущение социальной защищенности и доверия.</string>
+    <string name="card_d15_2" translatable="false">приятное чувство от общения, дружбы, доверительных стабильных отношений.</string>
+    <string name="card_d15_3" translatable="false">Поэкспериментировать с системой выработки доверия - попробовать отследить, что способствует созданию моего доверия, а что нет. Поставить "камни доверия".</string>
+    <string name="card_d15_4" translatable="false">Стараться выполнить все свои обещания и хвалить себя за это, за надежность.</string>
+    <string name="card_d15_5" translatable="false"> </string>
+
+    <string name="card_p15_1" translatable="false"> </string>
+    <string name="card_p15_2" translatable="false">Начать замечать:</string>
+    <string name="card_p15_3" translatable="false"> </string>
+    <string name="card_p15_4" translatable="false"> </string>
+    <string name="card_p15_5" translatable="false"> </string>
+
+    <string name="card_d16_1" translatable="false"> - обычное описание чувства, которое приносит нам эндорфин</string>
+    <string name="card_d16_2" translatable="false">Эндорфин появился как ответ на чрезвычайные ситуации. Чувство эйфории, вызываемое эндорфином, кратковременно, поскольку для принятия важнейших решений с точки зрения выживания мы должны испытывать боль. Эндорфин высвобождается, только если человек превозмогает свои обычные возможности и доводит себя до состояния дискомфорта.</string>
+    <string name="card_d16_3" translatable="false">У боли есть предназначение. Она призвана сигнализировать, что в организме что-то не в порядке и должно быть срочно исправлено. Если уровень эндорфина был бы всегда высоким, мы не смогли бы принимать правильные решения с точки зрения выживания.</string>
+    <string name="card_d16_4" translatable="false">Мы не приспособлены получать кратковременное удовольствие от того, что причиняем себе боль, К счастью, смех, плач, и разумные физические усилия стимулируют небольшие приливы эндорфина.</string>
+    <string name="card_d16_5" translatable="false">Смех, плач, разные физические упражнения, растяжка, спортивные развлечения</string>
+
+    <string name="card_p16_1" translatable="false">"Эйфория"</string>
+    <string name="card_p16_2" translatable="false"> </string>
+    <string name="card_p16_3" translatable="false"> </string>
+    <string name="card_p16_4" translatable="false"> </string>
+    <string name="card_p16_5" translatable="false">Упражнения:</string>
+
+    <string name="card_d17_1" translatable="false"> </string>
+    <string name="card_d17_2" translatable="false"> </string>
+    <string name="card_d17_3" translatable="false"> </string>
+    <string name="card_d17_4" translatable="false"> </string>
+    <string name="card_d17_5" translatable="false"> </string>
+
+    <string name="card_p17_1" translatable="false"> </string>
+    <string name="card_p17_2" translatable="false"> </string>
+    <string name="card_p17_3" translatable="false"> </string>
+    <string name="card_p17_4" translatable="false"> </string>
+    <string name="card_p17_5" translatable="false"> </string>
 
     <string-array name="card_titles">
         <item>@string/card_title_1</item>
@@ -84,24 +271,276 @@
         <item>@string/card_title_17</item>
     </string-array>
 
-    <string-array name="card_descriptions">
-        <item>@string/card_desc_1</item>
-        <item>@string/card_desc_2</item>
-        <item>@string/card_desc_3</item>
-        <item>@string/card_desc_4</item>
-        <item>@string/card_desc_5</item>
-        <item>@string/card_desc_6</item>
-        <item>@string/card_desc_7</item>
-        <item>@string/card_desc_8</item>
-        <item>@string/card_desc_9</item>
-        <item>@string/card_desc_10</item>
-        <item>@string/card_desc_11</item>
-        <item>@string/card_desc_12</item>
-        <item>@string/card_desc_13</item>
-        <item>@string/card_desc_14</item>
-        <item>@string/card_desc_15</item>
-        <item>@string/card_desc_16</item>
-        <item>@string/card_desc_17</item>
+    <string-array name="card_d1">
+        <item>@string/card_d1_1</item>
+        <item>@string/card_d1_2</item>
+        <item>@string/card_d1_3</item>
+        <item>@string/card_d1_4</item>
+        <item>@string/card_d1_5</item>
+    </string-array>
+
+    <string-array name="card_d2">
+        <item>@string/card_d2_1</item>
+        <item>@string/card_d2_2</item>
+        <item>@string/card_d2_3</item>
+        <item>@string/card_d2_4</item>
+        <item>@string/card_d2_5</item>
+    </string-array>
+
+    <string-array name="card_d3">
+        <item>@string/card_d3_1</item>
+        <item>@string/card_d3_2</item>
+        <item>@string/card_d3_3</item>
+        <item>@string/card_d3_4</item>
+        <item>@string/card_d3_5</item>
+    </string-array>
+
+    <string-array name="card_d4">
+        <item>@string/card_d4_1</item>
+        <item>@string/card_d4_2</item>
+        <item>@string/card_d4_3</item>
+        <item>@string/card_d4_4</item>
+        <item>@string/card_d4_5</item>
+    </string-array>
+
+    <string-array name="card_d5">
+        <item>@string/card_d5_1</item>
+        <item>@string/card_d5_2</item>
+        <item>@string/card_d5_3</item>
+        <item>@string/card_d5_4</item>
+        <item>@string/card_d5_5</item>
+    </string-array>
+
+    <string-array name="card_d6">
+        <item>@string/card_d6_1</item>
+        <item>@string/card_d6_2</item>
+        <item>@string/card_d6_3</item>
+        <item>@string/card_d6_4</item>
+        <item>@string/card_d6_5</item>
+    </string-array>
+
+    <string-array name="card_d7">
+        <item>@string/card_d7_1</item>
+        <item>@string/card_d7_2</item>
+        <item>@string/card_d7_3</item>
+        <item>@string/card_d7_4</item>
+        <item>@string/card_d7_5</item>
+    </string-array>
+
+    <string-array name="card_d8">
+        <item>@string/card_d8_1</item>
+        <item>@string/card_d8_2</item>
+        <item>@string/card_d8_3</item>
+        <item>@string/card_d8_4</item>
+        <item>@string/card_d8_5</item>
+    </string-array>
+
+    <string-array name="card_d9">
+        <item>@string/card_d9_1</item>
+        <item>@string/card_d9_2</item>
+        <item>@string/card_d9_3</item>
+        <item>@string/card_d9_4</item>
+        <item>@string/card_d9_5</item>
+    </string-array>
+
+    <string-array name="card_d10">
+        <item>@string/card_d10_1</item>
+        <item>@string/card_d10_2</item>
+        <item>@string/card_d10_3</item>
+        <item>@string/card_d10_4</item>
+        <item>@string/card_d10_5</item>
+    </string-array>
+
+    <string-array name="card_d11">
+        <item>@string/card_d11_1</item>
+        <item>@string/card_d11_2</item>
+        <item>@string/card_d11_3</item>
+        <item>@string/card_d11_4</item>
+        <item>@string/card_d11_5</item>
+    </string-array>
+
+    <string-array name="card_d12">
+        <item>@string/card_d12_1</item>
+        <item>@string/card_d12_2</item>
+        <item>@string/card_d12_3</item>
+        <item>@string/card_d12_4</item>
+        <item>@string/card_d12_5</item>
+    </string-array>
+
+    <string-array name="card_d13">
+        <item>@string/card_d13_1</item>
+        <item>@string/card_d13_2</item>
+        <item>@string/card_d13_3</item>
+        <item>@string/card_d13_4</item>
+        <item>@string/card_d13_5</item>
+    </string-array>
+
+    <string-array name="card_d14">
+        <item>@string/card_d14_1</item>
+        <item>@string/card_d14_2</item>
+        <item>@string/card_d14_3</item>
+        <item>@string/card_d14_4</item>
+        <item>@string/card_d14_5</item>
+    </string-array>
+
+    <string-array name="card_d15">
+        <item>@string/card_d15_1</item>
+        <item>@string/card_d15_2</item>
+        <item>@string/card_d15_3</item>
+        <item>@string/card_d15_4</item>
+        <item>@string/card_d15_5</item>
+    </string-array>
+
+    <string-array name="card_d16">
+        <item>@string/card_d16_1</item>
+        <item>@string/card_d16_2</item>
+        <item>@string/card_d16_3</item>
+        <item>@string/card_d16_4</item>
+        <item>@string/card_d16_5</item>
+    </string-array>
+
+    <string-array name="card_d17">
+        <item>@string/card_d17_1</item>
+        <item>@string/card_d17_2</item>
+        <item>@string/card_d17_3</item>
+        <item>@string/card_d17_4</item>
+        <item>@string/card_d17_5</item>
+    </string-array>
+
+    <string-array name="card_p1">
+        <item>@string/card_p1_1</item>
+        <item>@string/card_p1_2</item>
+        <item>@string/card_p1_3</item>
+        <item>@string/card_p1_4</item>
+        <item>@string/card_p1_5</item>
+    </string-array>
+
+    <string-array name="card_p2">
+        <item>@string/card_p2_1</item>
+        <item>@string/card_p2_2</item>
+        <item>@string/card_p2_3</item>
+        <item>@string/card_p2_4</item>
+        <item>@string/card_p2_5</item>
+    </string-array>
+
+    <string-array name="card_p3">
+        <item>@string/card_p3_1</item>
+        <item>@string/card_p3_2</item>
+        <item>@string/card_p3_3</item>
+        <item>@string/card_p3_4</item>
+        <item>@string/card_p3_5</item>
+    </string-array>
+
+    <string-array name="card_p4">
+        <item>@string/card_p4_1</item>
+        <item>@string/card_p4_2</item>
+        <item>@string/card_p4_3</item>
+        <item>@string/card_p4_4</item>
+        <item>@string/card_p4_5</item>
+    </string-array>
+
+    <string-array name="card_p5">
+        <item>@string/card_p5_1</item>
+        <item>@string/card_p5_2</item>
+        <item>@string/card_p5_3</item>
+        <item>@string/card_p5_4</item>
+        <item>@string/card_p5_5</item>
+    </string-array>
+
+    <string-array name="card_p6">
+        <item>@string/card_p6_1</item>
+        <item>@string/card_p6_2</item>
+        <item>@string/card_p6_3</item>
+        <item>@string/card_p6_4</item>
+        <item>@string/card_p6_5</item>
+    </string-array>
+
+    <string-array name="card_p7">
+        <item>@string/card_p7_1</item>
+        <item>@string/card_p7_2</item>
+        <item>@string/card_p7_3</item>
+        <item>@string/card_p7_4</item>
+        <item>@string/card_p7_5</item>
+    </string-array>
+
+    <string-array name="card_p8">
+        <item>@string/card_p8_1</item>
+        <item>@string/card_p8_2</item>
+        <item>@string/card_p8_3</item>
+        <item>@string/card_p8_4</item>
+        <item>@string/card_p8_5</item>
+    </string-array>
+
+    <string-array name="card_p9">
+        <item>@string/card_p9_1</item>
+        <item>@string/card_p9_2</item>
+        <item>@string/card_p9_3</item>
+        <item>@string/card_p9_4</item>
+        <item>@string/card_p9_5</item>
+    </string-array>
+
+    <string-array name="card_p10">
+        <item>@string/card_p10_1</item>
+        <item>@string/card_p10_2</item>
+        <item>@string/card_p10_3</item>
+        <item>@string/card_p10_4</item>
+        <item>@string/card_p10_5</item>
+    </string-array>
+
+    <string-array name="card_p11">
+        <item>@string/card_p11_1</item>
+        <item>@string/card_p11_2</item>
+        <item>@string/card_p11_3</item>
+        <item>@string/card_p11_4</item>
+        <item>@string/card_p11_5</item>
+    </string-array>
+
+    <string-array name="card_p12">
+        <item>@string/card_p12_1</item>
+        <item>@string/card_p12_2</item>
+        <item>@string/card_p12_3</item>
+        <item>@string/card_p12_4</item>
+        <item>@string/card_p12_5</item>
+    </string-array>
+
+    <string-array name="card_p13">
+        <item>@string/card_p13_1</item>
+        <item>@string/card_p13_2</item>
+        <item>@string/card_p13_3</item>
+        <item>@string/card_p13_4</item>
+        <item>@string/card_p13_5</item>
+    </string-array>
+
+    <string-array name="card_p14">
+        <item>@string/card_p14_1</item>
+        <item>@string/card_p14_2</item>
+        <item>@string/card_p14_3</item>
+        <item>@string/card_p14_4</item>
+        <item>@string/card_p14_5</item>
+    </string-array>
+
+    <string-array name="card_p15">
+        <item>@string/card_p15_1</item>
+        <item>@string/card_p15_2</item>
+        <item>@string/card_p15_3</item>
+        <item>@string/card_p15_4</item>
+        <item>@string/card_p15_5</item>
+    </string-array>
+
+    <string-array name="card_p16">
+        <item>@string/card_p16_1</item>
+        <item>@string/card_p16_2</item>
+        <item>@string/card_p16_3</item>
+        <item>@string/card_p16_4</item>
+        <item>@string/card_p16_5</item>
+    </string-array>
+
+    <string-array name="card_p17">
+        <item>@string/card_p17_1</item>
+        <item>@string/card_p17_2</item>
+        <item>@string/card_p17_3</item>
+        <item>@string/card_p17_4</item>
+        <item>@string/card_p17_5</item>
     </string-array>
 
 </resources>

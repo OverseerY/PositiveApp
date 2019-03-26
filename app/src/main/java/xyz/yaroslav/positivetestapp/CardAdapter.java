@@ -67,7 +67,8 @@ public class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder> {
         ShowCardFragment fragment = new ShowCardFragment();
         Bundle bundle = new Bundle();
         bundle.putString("cardHeader", card.getTitle());
-        bundle.putString("cardDescription", card.getDescription());
+        bundle.putStringArray("cardDesc", card.getDescription());
+        bundle.putStringArray("cardLab", card.getLabel());
         fragment.setArguments(bundle);
         FragmentTransaction ft = ((MainActivity)context).getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.fragment_container, fragment);

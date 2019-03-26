@@ -5,7 +5,7 @@
             android:id="@+id/nav_cards"
             android:icon="@drawable/ic_card"
             android:title="@string/label_cards" />
-        <item
+        <!--item
             android:id="@+id/nav_tests"
             android:icon="@drawable/ic_checklist"
             android:title="@string/label_tests" />
@@ -16,6 +16,6 @@
         <item
             android:id="@+id/nav_settings"
             android:icon="@drawable/ic_settings"
-            android:title="@string/label_settings" />
+            android:title="@string/label_settings" /-->
     </group>
 </menu>
